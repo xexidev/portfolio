@@ -1,0 +1,76 @@
+{
+    "grafico": [
+        {
+            "name": "El Aguafiestas",
+            "id": "aguafiestas",
+            "image": "work/grafico/aguafiestas.jpg",
+            "description": "Desarrollo de Digipack de doble cuerpo, galleta de CD y libreto para el disco 'El Aguafiestas' de 'Universo Acelerado'.<br><br>Creatvidad y diseño completos, desde el concepto, dirección de la sesión fotográfica, retoque, maquetación y cierre para impresión."
+        }, {
+            "name": "Quid Comunicació",
+            "id": "quid",
+            "image": "work/grafico/quid.jpg",
+            "description": "Diseño de logotipo para QUID Comunicació, consultora de servicios de comunicación para administraciones públicas.<br><br>Paralelamente también desarrollamos su página web con el CMS Joomla!<br><br><a href='http://www.quidcomunicacio.com/' target='_blank' title='Web Quid Comunicació'>www.quidcomunicacio.com</a>"
+        }, {
+            "name": "Lloga'l sense risc",
+            "id": "pratespais",
+            "image": "work/grafico/pratespais.jpg",
+            "description": "Diseño de tríptico para la campaña 'Lloga'l sense risc' para Prat Espais, empresa municipal dependiente de l'Ajuntament del Prat de Llobregat que gestiona temas de vivienda y aparcamientos.<br><br>El folleto publicita los beneficios y la seguridad que la empresa ofrece a aquellos arrendatarios que la elijan para gestionar sus inmuebles."
+        }, {
+            "name": "As de Copes",
+            "id": "asdecopes",
+            "image": "work/grafico/asdecopes.jpg",
+            "description": "Diseño de logotipo e imagen corporativa para el Bar-Pub 'As de Copes' en El Prat de Llobregat."
+        }, {
+            "name": "APP Familyar",
+            "id": "familyar",
+            "image": "work/grafico/familyar.jpg",
+            "description": "Flyer publicitario de la APP Familyar para el Ajuntament del Prat de Llobregat.<br><br>En él se publicita esta aplicación para mantener comunicados a personas mayores y sus familiares, y ofrecer una suscripción gratuita de un año."
+        }, {
+            "name": "Mercat del Prat",
+            "id": "mercat",
+            "image": "work/grafico/mercat.jpg",
+            "description": "Diseño de publicidad posicionada en los Autobuses de El Prat de Llobregat para estimular la compra en su mercado municipal para las navidades de 2022."
+        }
+    ],
+    "web": [
+        {
+            "name": "Discine",
+            "id": "discine",
+            "image": "work/web/discine.jpg",
+            "url": "https://www.discine.es"
+        }, {
+            "name": "Esportian",
+            "id": "esportian",
+            "image": "work/web/esportian.jpg",
+            "url": "https://www.esportian.com"
+        }, {
+            "name": "Fotobox",
+            "id": "fotobox",
+            "image": "work/web/fotobox.jpg",
+            "url": "https://www.fotoboxfotografia.com"
+        }, {
+            "name": "Helpoint",
+            "id": "helpoint",
+            "image": "work/web/helpoint.jpg",
+            "url": "https://www.helpointserveis.com"
+        }, {
+            "name": "Sol Pisos",
+            "id": "solpisos",
+            "image": "work/web/solpisos.jpg",
+            "url": "https://www.solpisos.es"
+        }, {
+            "name": "No Problem",
+            "id": "noproblem",
+            "image": "work/web/noproblem.jpg",
+            "url": "https://www.noproblembcn.com"
+        }
+    ],
+    "dev": [
+        {
+            "name": "JavaScript TaskList",
+            "id": "tasklist",
+            "image": "work/dev/tasklist.jpg",
+            "description": "Proyecto personal que consiste en el desarorllo de una To-Do List en formato SPA escrito en JavaScript.<br><br>Permite crear tareas a las que se puede aplicar etiquetas de estado (completada, importante o activa) que quedan guardadas en el almacenamiento local del navegador. La aplicación reconoce y marca las tareas con fecha anterior a la actual, y permite editar y eliminar las tareas de manera individual o en grupo, es responsive y multi-idioma.<br><br><a href='https://xexi.es/apps/tasklist/' target='_blank' title='TaskList APP'>Lanzar TaskList APP</a>"
+        }
+    ]
+}
