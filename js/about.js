@@ -19,13 +19,13 @@ window.addEventListener("load", () => {
         animateIn(document.getElementById("about-button"))
     },3200);
     setTimeout(() => {
-        animateIn(document.getElementById("about-grafico-link"))
+        animateIn(document.getElementById("about-dev-link"))
     },3400);
     setTimeout(() => {
         animateIn(document.getElementById("about-web-link"))
     },3600);
     setTimeout(() => {
-        animateIn(document.getElementById("about-dev-link"))
+        animateIn(document.getElementById("about-grafico-link"))
     },3800);
     /* Title glitch */
     setTimeout(() => {

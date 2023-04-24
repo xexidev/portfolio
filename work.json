@@ -67,6 +67,12 @@
     ],
     "dev": [
         {
+            "name": "NextBus Web App",
+            "id": "nextbus",
+            "image": "work/dev/nextbus.jpg",
+            "description": "Web App que muestra el tiempo actualizado de llegada de un Bus de TMB (Barcelona) a una parada dada. La aplicación está escrita en JavaScript y funciona usando la API de TMB para extraer las líneas y paradas de Bus para, una vez seleccionadas, mostrar información sobre la línea, y una cuenta atrás del tiempo que tardará en llegar acompañada de una animación que ilustra el avance del Bus hasta la parada.<br><br><a href='https://xexi.es/apps/nextbus/' target='_blank' title='NextBus APP'>Lanzar NextBus APP</a>"
+        },
+        {
             "name": "JavaScript TaskList",
             "id": "tasklist",
             "image": "work/dev/tasklist.jpg",
