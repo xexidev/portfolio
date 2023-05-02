@@ -50,6 +50,9 @@ a {
 a:hover {
     color: var(--main-link-hover-color);
 }
+html, body {
+    overflow-y: hidden;
+}
 body {
     background-color: var(--main-color-blue);
 }
@@ -221,9 +224,11 @@ body.modal-on #sidebar {
     justify-content: space-between;
     overflow-y: auto;
 }
+/*
 .section-home.visible .content {
     position: fixed;
 }
+*/
 @keyframes sectionOut {
     0%   { opacity: 100%; position: fixed; transform: skewX(-50deg); top: 0; left: 0;}
     10%  { opacity: 100%; position: fixed; transform: skewX(0deg);}
