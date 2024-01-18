@@ -28,6 +28,12 @@
     padding: 0;
     font-size: 100%;
 }
+html {    
+  overscroll-behavior: none;
+}
+html * {
+    overscroll-behavior: auto;
+}
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -55,6 +61,7 @@ html, body {
 }
 body {
     background-color: var(--main-color-blue);
+    height: 100vh;
 }
 #content {
     padding-top: 300px;
@@ -69,11 +76,11 @@ body {
 }
 .button {
     display: inline-block;
-    font-size: 24px;
+    font-size: 22px;
     color: #ffffff;
     background-color: var(--main-dark-color);
     transition: background-color 150ms ease-in-out;
-    padding: 0.8rem 1.6rem 1.1rem;
+    padding: 0.6rem 1.4rem 0.9rem;
     border-radius: 5px;
 }
 .button:hover {
@@ -138,6 +145,7 @@ body {
 #main-nav .menu-item.active {
     color: var(--main-text-color);
 }
+
 /* Sidebar */
 #sidebar {
     width: var(--sidebar-width);
@@ -204,14 +212,16 @@ body.modal-on #sidebar {
 #sidebar-links a {
     display: block;
 }
-#sidebar-links svg {
+#sidebar-links a svg {
     fill: var(--main-color-blue);
     width: 28px;
     height: 28px;
     margin-top: 5px;
+    transition: fill 150ms linear;
 }
-.section-home {
-    margin-bottom: 0px;
+#sidebar-links a:hover svg {
+    fill: var(--main-color-red);
+    transition: fill 150ms linear;
 }
 .content {
     display: flex;
@@ -220,15 +230,11 @@ body.modal-on #sidebar {
     max-width: calc(100% - var(--sidebar-width));
     z-index: 5;
     background-color: var(--main-color-blue);
-    align-items: center;
-    justify-content: space-between;
     overflow-y: auto;
 }
-/*
-.section-home.visible .content {
-    position: fixed;
+.content.container {
+    padding-bottom: 50px;
 }
-*/
 @keyframes sectionOut {
     0%   { opacity: 100%; position: fixed; transform: skewX(-50deg); top: 0; left: 0;}
     10%  { opacity: 100%; position: fixed; transform: skewX(0deg);}
@@ -294,7 +300,7 @@ body.modal-on #sidebar .sidebar-modal {
 
 /* About */
 #about-title {
-    font-size:280px;
+    font-size:240px;
     font-weight: 900;
     position: relative;
     display: block;
@@ -398,7 +404,6 @@ body.modal-on #sidebar .sidebar-modal {
     100% { visibility: visible; opacity: 1;}
 }
 
-
 /* Title Clip */
 #title-2.clip {
     animation-name: clipOne;
@@ -443,10 +448,10 @@ body.modal-on #sidebar .sidebar-modal {
     78.1% { clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%); text-shadow: 0 1px 0px var(--main-dark-color), 0 -1px 0px var(--main-dark-color), -4px 0 0px var(--main-color-red);}
     100% { clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);}
 }
-/* End title glitch */
 
+/* End title glitch */
 #about-description {
-    margin-bottom: 20px;
+    padding-bottom: 20px;
 }
 .about-code * {
     font-size: 28px;
@@ -466,6 +471,9 @@ body.modal-on #sidebar .sidebar-modal {
 }
 #about-button {
     opacity: 0;
+}
+.about-main-link > a {
+    display: block;
 }
 .about-main-link-big {
     font-size: 150px;
@@ -502,8 +510,10 @@ body.modal-on #sidebar .sidebar-modal {
 .work-text {    
     font-size: 22px;
     color: var(--soft-text-color);
-    margin-bottom: 36px;
     line-height: 1.4;
+}
+.work-info > .button {
+    margin-top: 30px;
 }
 .work-showcase {
     width: 50%;
@@ -511,6 +521,7 @@ body.modal-on #sidebar .sidebar-modal {
     justify-content: center;
     flex-wrap: wrap;
     box-shadow: 0px 0px 65px -25px var(--main-color-red);
+    margin-top: 30px;
 }
 .work-showcase-dev {
     box-shadow: none;
@@ -603,8 +614,8 @@ body.modal-on #sidebar .sidebar-modal {
     text-align: center;
 }
 .contact-info-item svg {
-    width: 128px;
-    height: 128px;
+    width: 92px;
+    height: 92px;
     fill: var(--main-dark-color);
     transform: translateY(0);
     transition: fill 150ms ease-in-out, transform 150ms ease-in-out;
@@ -619,91 +630,4 @@ body.modal-on #sidebar .sidebar-modal {
     font-size: 20px;
     font-weight: 500;
     color: var(--soft-text-color)
-}
-
-/* CV */
-.cv-modal {
-    position: relative;
-    max-width: 800px;
-    padding: 70px;
-    background-color: #fafafa;
-    font-size: 18px;
-    box-shadow: 0px 0px 5px var(--main-color-blue);
-}
-.cv-modal:after {
-    content: "";
-    background-color: var(--main-dark-color);
-    position: absolute;
-    top: -5px;
-    right: -5px;
-    height: 100px;
-    width: 100px;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
-}
-.cv-section {
-    padding-bottom: 10px;
-    border-bottom: 1px solid var(--color-softer-grey);
-    margin-bottom: 20px;
-}
-.cv-section:last-child {
-    padding-bottom: 10px;
-    border-bottom: 0px solid var(--color-softer-grey);
-    margin-bottom: 20px;
-}
-.cv-item {
-    display: block;
-    margin-bottom: 15px;
-}
-.little-h2 {
-    color: var(--main-color-red);
-    font-size: 16px;
-    display: block;
-    font-weight: 900;
-}
-.big-h2 {
-    color: var(--main-color-red);
-    font-size: 40px;
-    display: block;
-    font-weight: 900;
-    line-height: 0.6;
-    height: 50px;
-}
-.cv-fecha {
-    font-size: 13px;
-    color: var(--color-soft-grey);
-}
-.cv-lugar {
-    font-size: 13px;
-    color: var(--color-soft-grey);
-}
-.cv-empresa {
-    font-size: 16px;
-    color: var(--soft-dark-grey);
-}
-.cv-text {
-    font-size: 16px;
-}
-.cv-text a {
-    color: var(--soft-text-color);
-    transition: color 150ms ease-in-out;
-}
-.cv-text a:hover {
-    color: var(--main-color-blue);
-    transition: color 150ms ease-in-out;
-}
-.donwload-pdf-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 5px;
-    font-weight: 500;
-    transition: color 300ms ease-in-out;
-}
-.donwload-pdf-link:hover {
-    color: var(--main-color-red);
-    transition: color 300ms ease-in-out;
-}
-.donwload-pdf-ico {
-    width: 24px;
-    height: 24px;
-    fill: var(--main-color-red);
 }

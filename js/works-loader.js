@@ -4,16 +4,16 @@ fetch("work.json")
 .then((r) => {
     r.json().then((works) => {
         
-      let fragment = new DocumentFragment();
+      let fragment = new DocumentFragment()
 
       // Gráfico
       works.grafico.forEach((item) => {
-        let work = document.createElement("a");
-        work.setAttribute("data-id", item.id);
-        work.classList.add("work-item");
-        work.classList.add("work-item-diseno");
+        let work = document.createElement("a")
+        work.setAttribute("data-id", item.id)
+        work.classList.add("work-item")
+        work.classList.add("work-item-diseno")
         if (item.hasOwnProperty("url")) {
-          work.setAttribute("href", item.url);
+          work.setAttribute("href", item.url)
         }
         work.innerHTML = `            
                   <div class="work-image" style="background-image:url('${item.image}')"></div>
@@ -32,43 +32,43 @@ fetch("work.json")
                           </div>
                       </div>
                   </template>
-              `;
-        fragment.appendChild(work);
+              `
+        fragment.appendChild(work)
         work.addEventListener("click", (e) => {
-          e.preventDefault();
-          renderModal(work.querySelector("[data-modalid=" + item.id + "]"));
-        });
-      });
+          e.preventDefault()
+          renderModal(work.querySelector("[data-modalid=" + item.id + "]"))
+        })
+      })
       document
         .getElementsByClassName("work-showcase-grafico")[0]
-        .appendChild(fragment);
+        .appendChild(fragment)
 
       // Web
       works.web.forEach((item) => {
-        let work = document.createElement("a");
-        work.classList.add("work-item");
-        work.classList.add("work-item-web");
+        let work = document.createElement("a")
+        work.classList.add("work-item")
+        work.classList.add("work-item-web")
         if (item.hasOwnProperty("url")) {
-          work.setAttribute("href", item.url);
-          work.setAttribute("target", "_blank");
+          work.setAttribute("href", item.url)
+          work.setAttribute("target", "_blank")
         }
-        work.innerHTML = `            
+        work.innerHTML = `
                   <div class="work-image" style="background-image:url('${item.image}')"></div>
-              `;
-        fragment.appendChild(work);
-      });
+              `
+        fragment.appendChild(work)
+      })
       document
         .getElementsByClassName("work-showcase-web")[0]
-        .appendChild(fragment);
+        .appendChild(fragment)
 
       // Dev
       works.dev.forEach((item) => {
-        let work = document.createElement("a");
-        work.setAttribute("data-id", item.id);
-        work.classList.add("work-item");
-        work.classList.add("work-item-dev");
+        let work = document.createElement("a")
+        work.setAttribute("data-id", item.id)
+        work.classList.add("work-item")
+        work.classList.add("work-item-dev")
         if (item.hasOwnProperty("url")) {
-          work.setAttribute("href", item.url);
+          work.setAttribute("href", item.url)
         }
         work.innerHTML = `            
                   <div class="work-image" style="background-image:url('${item.image}')"></div>
@@ -87,19 +87,19 @@ fetch("work.json")
                           </div>
                       </div>
                   </template>
-              `;
-        fragment.appendChild(work);
+              `
+        fragment.appendChild(work)
         work.addEventListener("click", (e) => {
-          e.preventDefault();
-          renderModal(work.querySelector("[data-modalid=" + item.id + "]"));
-        });
-      });
+          e.preventDefault()
+          renderModal(work.querySelector("[data-modalid=" + item.id + "]"))
+        })
+      })
       document
         .getElementsByClassName("work-showcase-dev")[0]
-        .appendChild(fragment);
-    });
+        .appendChild(fragment)
+    })
   },
   (error) => {
-    console.log(error);
+    console.log(error)
   }
-);
+)

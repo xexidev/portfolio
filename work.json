@@ -14,7 +14,7 @@
             "name": "Lloga'l sense risc",
             "id": "pratespais",
             "image": "work/grafico/pratespais.jpg",
-            "description": "Diseño de tríptico para la campaña 'Lloga'l sense risc' para Prat Espais, empresa municipal dependiente de l'Ajuntament del Prat de Llobregat que gestiona temas de vivienda y aparcamientos.<br><br>El folleto publicita los beneficios y la seguridad que la empresa ofrece a aquellos arrendatarios que la elijan para gestionar sus inmuebles."
+            "description": "Diseño de tríptico para la campaña \"Lloga'l sense risc\" para Prat Espais, empresa municipal dependiente de l'Ajuntament del Prat de Llobregat que gestiona temas de vivienda y aparcamientos.<br><br>El folleto publicita los beneficios y la seguridad que la empresa ofrece a aquellos arrendatarios que la elijan para gestionar sus inmuebles."
         }, {
             "name": "As de Copes",
             "id": "asdecopes",
@@ -29,7 +29,7 @@
             "name": "Mercat del Prat",
             "id": "mercat",
             "image": "work/grafico/mercat.jpg",
-            "description": "Diseño de publicidad posicionada en los Autobuses de El Prat de Llobregat para estimular la compra en su mercado municipal para las navidades de 2022."
+            "description": "Diseño de publicidad posicionada en los Autobuses de El Prat de Llobregat para estimular la compra en su mercado municipal para las Navidades de 2022."
         }
     ],
     "web": [
@@ -67,16 +67,22 @@
     ],
     "dev": [
         {
+            "name": "Trax",
+            "id": "trax",
+            "image": "work/dev/trax.jpg",
+            "description": "Un pequeño secuenciador / caja de ritmos desarrollado en React que permite definir 6 sonidos distintos de batería en un patrón de 4x4 para ser reproducidos secuencialmente en bucle, con la posibilidad de modificar la velocidad de reproducción.<br><br><a href='https://trax.xexi.es' target='_blank' title='Trax, a React micro Drumkit Rhythm Box'>Lanzar Trax APP</a>"
+        },
+        {
             "name": "NextBus Web App",
             "id": "nextbus",
             "image": "work/dev/nextbus.jpg",
-            "description": "Web App que muestra el tiempo actualizado de llegada de un Bus de TMB (Barcelona) a una parada dada. La aplicación está escrita en JavaScript y funciona usando la API de TMB para extraer las líneas y paradas de Bus para, una vez seleccionadas, mostrar información sobre la línea, y una cuenta atrás del tiempo que tardará en llegar acompañada de una animación que ilustra el avance del Bus hasta la parada.<br><br><a href='https://xexi.es/apps/nextbus/' target='_blank' title='NextBus APP'>Lanzar NextBus APP</a>"
+            "description": "Web App que muestra el tiempo restante actualizado para la llegada de una línea de Autobús de TMB a la parada seleccionada. Escrita en JavaScript utilizando la API de TMB, muestra la información y disponibilidad de la línea, y una cuenta atrás del tiempo restante acompañada de una animación que ilustra el avance del Bus hasta la parada.<br><br><a href='https://xexi.es/apps/nextbus/' target='_blank' title='NextBus APP'>Lanzar NextBus APP</a>"
         },
         {
             "name": "JavaScript TaskList",
             "id": "tasklist",
             "image": "work/dev/tasklist.jpg",
-            "description": "Proyecto personal que consiste en el desarorllo de una To-Do List en formato SPA escrito en JavaScript.<br><br>Permite crear tareas a las que se puede aplicar etiquetas de estado (completada, importante o activa) que quedan guardadas en el almacenamiento local del navegador. La aplicación reconoce y marca las tareas con fecha anterior a la actual, y permite editar y eliminar las tareas de manera individual o en grupo, es responsive y multi-idioma.<br><br><a href='https://xexi.es/apps/tasklist/' target='_blank' title='TaskList APP'>Lanzar TaskList APP</a>"
+            "description": "Lista de tareas escrita en JavaScript.<br>Permite crear tareas a las que se puede aplicar fecha de finalización y etiquetas de estado (completada, importante o activa) que quedan guardadas en el almacenamiento local del navegador. La aplicación reconoce y marca las tareas con fecha anterior a la actual, y permite editar y eliminar las tareas de manera individual o en grupo. Responsive y multi-idioma.<br><br><a href='https://xexi.es/apps/tasklist/' target='_blank' title='TaskList APP'>Lanzar TaskList APP</a>"
         }
     ]
 }
