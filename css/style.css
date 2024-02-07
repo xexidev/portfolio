@@ -264,7 +264,7 @@ body.modal-on {
 .sidebar-modal-content {
     padding: 100px;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     height: 100vh;
     justify-content: center;
     overflow-y: scroll;
@@ -561,11 +561,11 @@ body.modal-on #sidebar .sidebar-modal {
 /* Work Modal */
 .work-modal {
     display: flex;
-    height: 100%;
     width: 100%;
     gap: 40px;
 }
 .work-modal-image {
+    display: flex;
     flex-basis: 60%;
     width: 60%;
 }
